@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+.dropbtn{
+    display: none;
+}
+/* #icon {
+    display: none;
+} */
+
+body {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #100028;
+    color: white;
+}
+
+.logo_modo {
+    background-color: #8600C5;
+    border: none;    
+}
+
+main {
+    width: 85%;
+    margin-left: 15%;
+}
+
+header {
+    width: 15%;
+    height: 100%;
+    background-color: #8600C5;
+    font-size: 1.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    z-index: +1;
+    font-weight: 600;
+}
+/*---------------------------------------*/
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+/*---------------------------------------*/
+#cardosoA {
+    font-size: 1.9rem;
+}
+
+header .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    border-radius: 300px;
+}
+
+#cardosoA {
+    color: white;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header .bottomA nav ul li {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    font-weight: normal;
+    background: #b13ee6bd;
+    border-radius: 10px;
+
+    transition: all .3s ease;
+}
+
+header .bottomA nav ul li a {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+header .bottom nav ul li:hover {
+    background: #b13ee681;
+}
+
+header .bottom nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#Purple {
+    background-image: url(BackgroundPurple.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#Purple #text1 {
+    text-align: center;
+}
+
+#Purple #site {
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+
+#Purple #nome1 {
+    font-size: 4.4rem;
+}
+
+#Purple #dese {
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+
+#foto img {
+    width: 300px;
+    height: auto;
+    border-radius: 300px;
+    border: solid 3px black;
+}
+
+#introducao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 40px;
+}
+
+.titleInt {
+    font-size: 2.4rem;
+}
+
+.contentInt {
+    font-size: 1.5rem;
+}
+
+#quemsou {
+    background-image: url(piskel_cat.gif);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    padding: 40px;
+}
+
+#quemsou .top {
+    display: flex;
+}
+
+.topContentBottom {
+    margin-left: 16%;
+}
+
+.contentAbout {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#fotoeu {
+    border-radius: 300px;
+    width: 280px;
+}
+
+#projetosap {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px;
+}
+
+#projetoSapGrid {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 20px;
+    margin-top: 10%;
+    position: relative;
+
+}
+
+#projetoSapGrid {
+    animation: projetos 10s infinite linear;
+}
+
+
+
+
+
+@keyframes projetos {
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 35%;
+    }
+}
+
+#imggrid {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 300px;
+    border-radius: 300px;
+}
+
+#imgdelivery {
+    width: 300px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imgtabela {
+    width: 300px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imgflex {
+    width: 300px;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imgperiodica {
+    width: 100%;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imggrid2 {
+    grid-column-start: 6;
+    width: 300px;
+    border-radius: 300px;
+}
+
+#imgdelivery2 {
+    width: 300px;
+    grid-column-start: 7;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imgtabela2 {
+    width: 300px;
+    grid-column-start: 8;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imgflex2 {
+    width: 300px;
+    grid-column-start: 9;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#imgperiodica2 {
+    width: 300px;
+    grid-column-start: 10;
+    grid-row-start: 2;
+    border-radius: 300px;
+}
+
+#sociais {
+    width: 100%;
+    background-image: url("360_F_550349037_ukIvmE453JLLZtreKxg4LoH96WHemUpn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+#corcontato {
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+}
+
+#corcontato section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.emails {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#corcontato section h2 {
+    color: white;
+    font-size: 3em;
+}
+
+#corcontato section a {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 400;
+}
+
+#corcontato section a:hover {
+    text-decoration: underline;
+}
+
+#corcontato section .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#contato {
+    padding-bottom: 40px;
+}
+
+.formsTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.formsBottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.formsBottom .left,
+.formsBottom .right {
+    width: 50%;
+    height: 100%;
+}
+
+.formsBottom .left {
+    display: grid;
+    place-items: center;
+}
+
+.formsBottom .left iframe {
+    width: 100%;
+}
+
+.formsBottom .right {
+    display: grid;
+    place-items: center;
+}
+
+.formsBottom .right form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formsBottom .right form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.formsBottom .right form input:focus,
+textarea:focus {
+    border: 2px solid purple;
+}
+
+#btnenviar {
+    border-radius: 10px;
+    font-weight: 700;
+    border: solid 2px black;
+}
+
+#btnenviar:hover {
+    background: rgb(233, 149, 222);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A23ED0;
+    height: 80px;
+    width: 100%;
+}
+
+.footerContent {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.footerContent span {
+    font-weight: bold;
+}
+
+.light {
+    background-color: #dbf7ff;
+}
+
+.light #introducao .bloco {
+    color: black;
+}
+
+.light #projetosap #projetoSapGrid img {
+    border: 2px solid black;
+}
+
+.light .contentInt {
+    font-weight: 600;
+}
+
+.light #Purple {
+    background-image: url("fundolindo.jpg");
+}
+
+.light #quemsou {
+    background-image: url("bv65r3s234n61.gif");
+    background-size: cover;
+    color: white;
+}
+
+.light .sectionTitle {
+    color: black;
+}
+
+.light #quemsou .sectionTitle {
+    color: white;
+}
+
+.light .contentAbout {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.light #foto img {
+    border: solid 2px white;
+}
+
+.light #sociais {
+    background-image: url("maxresdefault.jpg");
+    background-size: cover;
+}
+
+.light header {
+    background-color: #D69ED1;
+}
+
+.light .logo_modo {
+    background-color: #D69ED1;
+}
+
+.light .logo {
+    border-radius: 300px;
+    filter: grayscale(100%);
+}
+
+.light footer {
+    background-color: #B061A9;
+}
+#icon{
+    width: 30px;
+
+}
+.light .dropbtn:hover, .dropbtn:focus {
+    background-color: #D69ED1;
+  }
+  .light .dropdown-content{
+    background-color: #D69ED1;
+  }
+@media (max-width: 768px) {
+    #cardosoA{
+        position: absolute;
+        left: 55%;
+        top:50%
+    }
+    #myDropdown{
+        position: relative;
+        left: -35%;
+        top: -100px;
+    }
+    #dropdown-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    header {
+        width: 100%;
+        height: 18%;
+        
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #icon{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    #Purple #text1 #site {
+        font-size: 1.7rem;
+        font-weight: normal;
+    }
+
+    #Purple #text1 #nome1 {
+        font-size: 3rem;
+    }
+
+    #Purple #text1 #dese {
+        font-size: 2rem;
+    }
+
+    .center {
+        text-align: center;
+    }
+    
+    #bloco1tit {
+        font-size: 2.1em;
+    }
+
+    .contentInt {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    #quemsou .top {
+        gap: 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .topContentBottom {
+        margin: 0;
+    }
+
+    #fotoeu {
+        width: 150px;
+        border-radius: 300px;
+    }
+
+    .contentAbout {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #titprojeto {
+        font-size: 3.2rem;
+    }
+
+    #projetosap {
+        height: 500px;
+    }
+
+    #projetoSapGrid {
+        animation: projetos 20s infinite linear;
+    }
+
+    @keyframes projetos {
+        from {
+            left: -1px;
+        }
+
+        to {
+            left: 1000px;
+        }
+    }
+
+    #corcontato {
+        width: 100%;
+    }
+
+    #corcontato section h2 {
+        color: white;
+        font-size: 2.7em;
+        padding-top: 40px;
+    }
+
+    .content {
+        font-size: 0.9rem;
+    }
+
+    #contato h1 {
+        font-size: 2.1rem;
+    }
+
+    #contato iframe {
+        width: 350px;
+        height: 300px;
+    }
+
+    .formsBottom .right form {
+        width: 100%;
+    }
+
+    .footerContent {
+        font-size: 1.0rem;
+        text-align: center;
+    }
+
+
+    .formsBottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .dropbtn {
+        display: flex;
+        background-color: #8600C5;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #8600C5;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute; 
+        background-color: #9d05e4;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content .bottomA {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+    
+      .bottomA{
+        display: none;
+      }
+}
