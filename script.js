@@ -1,5 +1,5 @@
 const elem = document.getElementById("icon");
-alert("Cardoso Projects ativa o nome light do site")
+alert("Cardoso Projects ativa o modo light do site")
 function LightMode() {
   document.body.classList.toggle("light")
   console.log("Clicado")
